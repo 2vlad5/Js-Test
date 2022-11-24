@@ -1,2 +1,2 @@
-document.cookie = "user=John";
-alert(document.cookie);
+// document.cookie = "user=John";
+// alert(document.cookie);
