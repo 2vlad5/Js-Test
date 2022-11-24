@@ -22,12 +22,13 @@ div.MainBackground-top{
   border-radius: 50px 50px 0 0;
   background: #3c005a;
   width: 100%;
-  height: 400px;
+  min-height: 400px;
   position: inherit;
   flex-direction: column;
   align-content: center;
   align-items: center;
   justify-content: space-around;
+  transition: 1s;
   z-index: 2;
 }
 
@@ -91,6 +92,27 @@ div.MainBackground-center video{
   width: 100%;
   height: 100%;
   background: #3f0058;
+}
+
+div.MainBackground-center div.CenterText{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: larger;
+  font-weight: 700;
+}
+
+div.MainBackground-center div.CenterText p{
+  background: #afa0ff;
+  border-radius: 50px 0 50px 0;
+  padding: 10px;
+  margin: 20px 170px 20px 170px;
 }
 
 div.MainBackground-bottom{
