@@ -1,0 +1,197 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+
+p{
+  margin: 0;
+}
+
+div.Header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: groove;
+}
+
+div.Header div.HeaderDiv1{
+  color: #850000;
+}
+
+div.Header div.HeaderDiv2{
+  display: flex;
+  gap: 10px;
+  max-width: 520px;
+  overflow: auto;
+}
+
+div.Header div.HeaderDiv2 div.HeaderDiv2-Section{
+  border: black;
+  border-style: double;
+  border-radius: 20px;
+  padding: 5px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+div.Header div.HeaderDiv2 div.HeaderDiv2-Section:hover{
+  background: #87060047;
+  transition: 0s;
+}
+
+div.LibraryMain{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding: 25px 0 0 0;
+}
+
+div.LibraryMain div.LibraryMain-Section1, .LibraryMain-Section2, .LibraryMain-Section3{
+  min-width: 33%;
+  min-height: 300px;
+  border-radius: 10px;
+}
+
+div.LibraryMain div.LibraryMain-Section3{
+  height: calc(100vh - 120px);
+}
+
+div.LibraryMain div.LibraryMain-Section1, .LibraryMain-Section3{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+}
+
+div.LibraryMain div.LibraryMain-Section1 div.LM-S1-Content{
+  padding: 20px;
+}
+
+div.LibraryMain div.LibraryMain-Section1 div.LM-S1-Content p{
+  transition: .5s;
+}
+
+div.LibraryMain div.LibraryMain-Section1 div.LM-S1-Content p:hover{
+  color: red;
+  font-size: 30px;
+  font-weight: 800;
+  transition: 0s;
+}
+
+div.LibraryMain div.LibraryMain-Section2 div.LM-S2-Content div.LM-S2-Container1, .LM-S2-Container2{
+  border-style: solid;
+  border-color: black;
+  border-width: 2px;
+  min-height: 100px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+div.LibraryMain div.LibraryMain-Section2 div.LM-S2-Content div.LM-S2-Container2{
+  margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+div.LectureMain{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+div.LectureMain div.LectureMain-Section{
+  width: 50%;
+}
+
+div.LectureMain div.LectureMain-Section div.LcM-S1-content{
+  padding: 70px;
+}
+
+div.LectureMain-Section div.LcM-S2-content{
+  width: 90%;
+  background: #ffeb00;
+  height: 450px;
+  border-radius: 100%;
+  margin: 200px 20px 0 0;
+  border-style: solid;
+}
+
+
+
+
+
+
+div.CoursesMain{
+  display: flex;
+}
+
+div.CoursesMain div.CoursesMain-Section1{
+  width: 50%;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+
+div.CoursesMain div.CoursesMain-Section1 div.СM-S1-content div.CM-S1-Figure1{
+  width: 250px;
+  height: 200px;
+  background: #62b1f5;
+  border-radius: 50px;
+  border-style: solid;
+  z-index: 2;
+}
+
+div.CoursesMain div.CoursesMain-Section1 div.СM-S1-content div.CM-S1-Figure2{
+  width: 250px;
+  height: 200px;
+  background: #feffaa;
+  border-radius: 50px;
+  border-style: solid;
+  margin: -127px 0 0 131px;
+  transform: rotate(39deg);
+  z-index: 1;
+}
+
+div.CoursesMain div.CoursesMain-Section1 div.СM-S1-content div.CM-S1-Figure3{
+  width: 200px;
+  height: 150px;
+  background: #006ac5a3;
+  border-radius: 50px;
+  border-style: solid;
+  margin: 0 0 0 160px;
+  z-index: 2;
+}
+
+div.CoursesMain div.CoursesMain-Section2{
+  width: 50%;
+}
+
+div.CoursesMain div.CM-S2-content{
+  padding: 70px;
+}
+
+
+
+@media (min-width: 1200px) {
+
+div.Header div.HeaderDiv2{
+    max-width: 900px;
+}
+
+div.Header div.HeaderDiv2::-webkit-scrollbar {
+    height: 5px;
+    background: #0000ff6b;
+}
+
+div.Header div.HeaderDiv2::-webkit-scrollbar-thumb{
+  background: #01004c73;
+}
+
+}
